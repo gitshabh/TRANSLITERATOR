@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Transliterator"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputTxt"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="120dp"
+        android:hint="Enter Text"
+        android:paddingLeft="10dp"
+        android:textColorHint="@android:color/black"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/translatedTxt"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:scrollbars = "vertical"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/btnTranslate"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/img_3"
+        android:theme="@style/Theme.Design"
+        android:gravity="center"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:onClick="downloadTxt"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="-76dp"
+        android:theme="@style/Theme.Design"
+        android:background="@drawable/img_1"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/uploadTxt"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:onClick="uploadOnClick"
+        android:layout_marginStart="-151dp"
+        android:layout_marginTop="-76dp"
+        android:theme="@style/Theme.Design"
+        android:background="@drawable/upload" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/white"
+        android:text="Upload"
+        android:textAlignment="center" />
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="157dp"
+        android:layout_marginTop="-27dp"
+        android:textColor="@color/white"
+        android:text="Translate"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="-15dp"
+        android:textColor="@color/white"
+        android:text="Save"
+        android:textAlignment="center" />
+
+
+</LinearLayout>
